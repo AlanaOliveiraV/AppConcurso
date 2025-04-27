@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <title>QuizMath Concursos</title>
+  <title>Quiz para Concursos</title>
   <!-- Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <!-- Chart.js -->
@@ -78,6 +78,8 @@
         <button type="button" data-cat="Geometria" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Geometria</button>
         <button type="button" data-cat="Raciocínio Lógico-Quantitativo" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Racíoc. Lógico</button>
         <button type="button" data-cat="Matemática Financeira" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Mat. Financeira</button>
+        <button type="button" data-cat="Hardware e Periféricos" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Hardware e Periféricos</button>
+
       </form>
       <div id="question-card" class="mx-auto max-w-md bg-white rounded-2xl shadow p-6 transition">
         <!-- Rendered dynamically -->
@@ -263,7 +265,32 @@ const questions = [
     text: "Qual o montante de uma aplicação de R$ 5.000,00 a juros compostos de 1% ao mês, durante 2 meses?",
     options: ["R$ 5.100,00", "R$ 5.100,50", "R$ 5.101,00", "R$ 5.200,00", "R$ 5.050,00"],
     answer: 1, difficulty: "Médio"
-  }
+  },
+// --- Hardware e Periféricos
+  {
+    id: 19, category: "Hardware e Periféricos",
+    text: "Qual dos seguintes componentes é considerado a mente do computador, responsável por processar as instruções?",
+    options: ["Memória RAM", "Placa-mãe", "Unidade de Disco Rígido (HD)", "Unidade Central de Processamento (CPU)", "Placa de vídeo"],
+    answer: 3, difficulty: "Fácil"
+  },
+  {
+    id: 20, category: "Hardware e Periféricos",
+    text: "Qual periférico de entrada é comumente utilizado para navegar graficamente em interfaces de usuário?",
+    options: ["Monitor", "Impressora", "Teclado", "Mouse", "Caixa de som"],
+    answer: 3, difficulty: "Fácil"
+  },
+  {
+    id: 21, category: "Hardware e Periféricos",
+    text: "Qual das seguintes unidades de medida representa a capacidade de armazenamento de dados em um disco rígido ou SSD?",
+    options: ["MHertz (Hz)", "Byte (B)", "Pixel (px)", "Dot per inch (dpi)", "Bit per second (bps)"],
+    answer: 1, difficulty: "Médio"
+  },
+  {
+    id: 22, category: "Hardware e Periféricos",
+    text: "Qual componente de hardware é responsável por armazenar temporariamente os dados que estão sendo utilizados pelo computador, permitindo acesso rápido pelo processador? ",
+    options: ["Placa de vídeo", "Memória ROM", "Memória RAM", "Unidade de disco óptico (CD/DVD)", "Fonte de alimentação"],
+    answer: 2, difficulty: "Médio"
+  },
 ];
 
 // App State
@@ -673,3 +700,4 @@ window.onload = function() {
   </script>
 </body>
 </html>
+        
