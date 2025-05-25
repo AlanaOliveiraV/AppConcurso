@@ -57,7 +57,7 @@
     <div class="sticky-top px-6 py-4 flex items-center justify-between border-b bg-white rounded-t-3xl">
       <div class="flex items-center space-x-2">
         <i class="fas fa-calculator text-indigo-600 text-xl"></i>
-        <span class="text-xl font-bold tracking-tight">QuizMath Concursos</span>
+        <span class="text-xl font-bold tracking-tight">Quiz</span>
       </div>
       <button 
         id="dashboardBtn"
@@ -72,13 +72,16 @@
     <!-- View Containers -->
     <div id="view-quiz" class="px-6 pt-4 pb-8">
       <form class="mb-4 flex flex-wrap gap-2 justify-center text-sm font-medium">
-        <button type="button" data-cat="all" class="category-btn py-1.5 px-4 rounded-xl border border-indigo-200 bg-indigo-500 text-white transition font-semibold">Todas</button>
-        <button type="button" data-cat="Aritmética" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Aritmética</button>
-        <button type="button" data-cat="Álgebra" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Álgebra</button>
-        <button type="button" data-cat="Geometria" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Geometria</button>
-        <button type="button" data-cat="Raciocínio Lógico-Quantitativo" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Racíoc. Lógico</button>
-        <button type="button" data-cat="Matemática Financeira" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Mat. Financeira</button>
-        <button type="button" data-cat="Hardware e Periféricos" class="category-btn py-1.5 px-4 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Hardware e Periféricos</button>
+        <button type="button" data-cat="Todas" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Todas</button>
+        <button type="button" data-cat="Aritmética" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Aritmética</button>
+        <button type="button" data-cat="Álgebra" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Álgebra</button>
+        <button type="button" data-cat="Geometria" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Geometria</button>
+        <button type="button" data-cat="Raciocínio Lógico-Quantitativo" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Racíoc. Lógico</button>
+        <button type="button" data-cat="Matemática Financeira" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Mat. Financeira</button>
+        <button type="button" data-cat="Hardware e Periféricos" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Hardware e Periféricos</button>
+        <button type="button" data-cat="Software e Sistemas Operacionais" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Software e Sistemas Operacionais</button>
+        <button type="button" data-cat="Conceitos de Internet e Segurança" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Conceitos de Internet e Segurança</button>
+        <button type="button" data-cat="Edição de Texto e Planilhas Eletrônicas" class="category-btn py-4.5 px-1 rounded-xl border border-gray-200 bg-gray-100 text-gray-900">Edição de Texto e Planilhas Eletrônicas</button>
 
       </form>
       <div id="question-card" class="mx-auto max-w-md bg-white rounded-2xl shadow p-6 transition">
@@ -287,10 +290,85 @@ const questions = [
   },
   {
     id: 22, category: "Hardware e Periféricos",
-    text: "Qual componente de hardware é responsável por armazenar temporariamente os dados que estão sendo utilizados pelo computador, permitindo acesso rápido pelo processador? ",
+    text: "Qual componente de hardware é responsável por armazenar temporariamente os dados que estão sendo utilizados pelo computador, permitindo acesso rápido pelo processador?",
     options: ["Placa de vídeo", "Memória ROM", "Memória RAM", "Unidade de disco óptico (CD/DVD)", "Fonte de alimentação"],
     answer: 2, difficulty: "Médio"
   },
+  // --- Software e Sistemas Operacionais
+  {
+    id: 23, category: "Software e Sistemas Operacionais",
+    text: "Qual das seguintes opções representa um tipo de software essencial que gerencia os recursos de hardware e software de um computador?",
+    options: ["Aplicativo de edição de texto", "Navegador de internet", "Sistema Operacional", "Planilha eletrônica", "Software de apresentação"],
+    answer: 2, difficulty: "Fácil"
+  },
+  {
+    id: 24, category: "Software e Sistemas Operacionais",
+    text: "Qual das seguintes extensões de arquivo é comumente associada a documentos de texto criados no Microsoft Word?",
+    options: [".exe", ".jpg", ".pdf", ".docx", ".mp3"],
+    answer: 3, difficulty: "Fácil"
+  },
+  {
+    id: 25, category: "Software e Sistemas Operacionais",
+    text: "Qual ação é geralmente realizada ao clicar com o botão direito do mouse em um arquivo ou pasta em um sistema operacional como o Windows?",
+    options: ["Abrir o arquivo ou pasta", "Selecionar o arquivo ou pasta", "Excluir o arquivo ou pasta", "Exibir um menu de contexto com opções adicionais", "Renomear o arquivo ou pasta"],
+    answer: 3, difficulty: "Fácil"
+  },
+  {
+    id: 26, category: "Software e Sistemas Operacionais",
+    text: "Qual dos seguintes softwares é um exemplo de navegador de internet?",
+    options: ["Microsoft Excel", "Adobe Photoshop", "Mozilla Firefox", "Microsoft PowerPoint", "Windows Explorer"],
+    answer: 2, difficulty: "Médio"
+  },
+  // --- Conceitos de Internet e Segurança
+  {
+    id: 27, category: "Conceitos de Internet e Segurança",
+    text: "O que significa a sigla URL quando se refere a endereços na internet?",
+    options: ["Universal Resource Locator", "Unified Retrieval Language", "User Registration Log", "Unit Record Layout", "Unit Record Layout"],
+    answer: 0, difficulty: "Médio"
+  },
+  {
+    id: 28, category: "Conceitos de Internet e Segurança",
+    text: "Qual dos seguintes termos se refere a um programa malicioso que se replica e se espalha para outros computadores através de redes?",
+    options: ["Firewall", "Antivírus", "Spam", "Vírus", "Cookie"],
+    answer: 3, difficulty: "Fácil"
+  },
+  {
+    id: 29, category: "Conceitos de Internet e Segurança",
+    text: "Qual prática é recomendada para proteger sua conta de e-mail contra acesso não autorizado?",
+    options: ["Utilizar a mesma senha para todas as contas online", "Compartilhar sua senha com amigos próximos", "Criar senhas curtas e fáceis de lembrar", "Ativar a autenticação de dois fatores, se disponível", "Clicar em links suspeitos em e-mails desconhecidos"],
+    answer: 3, difficulty: "Médio"
+  },
+  {
+    id: 30, category: "Conceitos de Internet e Segurança",
+    text: "O que é phishing no contexto da segurança da informação?",
+    options: ["Um tipo de ataque que torna um sistema indisponível para seus usuários", "Uma técnica de engenharia social para enganar usuários e obter informações confidenciais", "Um software utilizado para detectar e remover vírus de um computador", "Um dispositivo de hardware utilizado para proteger uma rede contra acessos não autorizados", "Um protocolo de comunicação segura para transferência de dados na internet"],
+    answer: 1, difficulty: "Médio"
+  },
+  // --- Edição de Texto e Planilhas Eletrônicas
+  {
+    id: 31, category: "Edição de Texto e Planilhas Eletrônicas",
+    text: "Em um software de edição de texto como o Microsoft Word, qual atalho de teclado é comumente utilizado para salvar um documento?",
+    options: ["Ctrl + X", "Ctrl + C", "Ctrl + V", "Ctrl + S", "Ctrl + P"],
+    answer: 3, difficulty: "Fácil"
+  },
+  {
+    id: 32, category: "Edição de Texto e Planilhas Eletrônicas",
+    text: "Em uma planilha eletrônica como o Microsoft Excel, qual símbolo é geralmente utilizado para iniciar uma fórmula?",
+    options: [" #", "@", "&", "=", " $"],
+    answer: 3, difficulty: "Fácil"
+  },
+  {
+    id: 33, category: "Edição de Texto e Planilhas Eletrônicas",
+    text: "Qual funcionalidade de um editor de texto permite alterar a aparência das letras, como tamanho, cor e tipo?",
+    options: ["Inserir hiperlink", "Formatação de fonte", "Verificação ortográfica", "Inserir imagem", "Salvar como"],
+    answer: 1, difficulty: "Fácil"
+  },
+  {
+    id: 34, category: "Edição de Texto e Planilhas Eletrônicas",
+    text: "Em uma planilha eletrônica, o que representa uma célula?",
+    options: ["Uma linha horizontal de dados", "Uma coluna vertical de dados", "A interseção de uma linha e uma coluna, onde os dados são armazenados", "Um conjunto de várias planilhas relacionadas", "Uma fórmula matemática complexa"],
+    answer: 2, difficulty: "Fácil"
+  }
 ];
 
 // App State
@@ -303,7 +381,7 @@ let timerStart = 0; // timestamp in ms
 let currentTimer = null;
 
 // Persistent storage keys
-const STORAGE_KEY_RESPONSES = 'quizmath_responses_v1';
+const STORAGE_KEY_RESPONSES = 'Quiz_responses_v1';
 // Helper: Salva histórico no localStorage
 function saveHistory() {
   localStorage.setItem(STORAGE_KEY_RESPONSES, JSON.stringify(userResponses));
